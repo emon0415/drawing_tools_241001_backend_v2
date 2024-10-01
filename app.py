@@ -8,7 +8,6 @@ import cv2
 from PIL import Image
 from io import BytesIO
 import requests
-from openai import OpenAI
 import random
 
 app = Flask(__name__)
