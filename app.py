@@ -11,7 +11,7 @@ import requests
 import random
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://drawing-tools-241001.onrender.com"}})
+CORS(app, resources={r"/*": {"origins": ["https://drawing-tools-241001.vercel.app", "http://localhost:3000"]}})
 
 #api_key = os.getenv('OPENAI_API_KEY')
 #client = OpenAI(api_key=api_key)
