@@ -125,8 +125,5 @@ def upload_image():
         print(f"アップロード処理でエラーが発生しました: {str(e)}")
         return jsonify({"message": f"エラーが発生しました: {str(e)}"}), 500
 
-
-gunicorn app:app --bind 0.0.0.0:$PORT
-
-#if __name__ == '__main__':
-    #app.run(debug=True, host = '0.0.0.0')
+if __name__ == '__main__':
+    app.run(debug=True, host = '0.0.0.0')
